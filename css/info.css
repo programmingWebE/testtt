@@ -1,7 +1,7 @@
 .info {
 	position: relative;
 	z-index: 4;
-	background-image: url(./img/pattern.png);
+	background-image: url(../img/pattern.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: auto auto;
 	background-size: auto;

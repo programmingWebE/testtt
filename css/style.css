@@ -147,7 +147,7 @@ main {
 }
 
 .main-header {
-	background-image: url(./img/bg-header.svg);
+	background-image: url(../img/bg-header.svg);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -290,6 +290,7 @@ main {
 }
 
 .main-header__btn {
+	font: inherit;
 	position: relative;
 	cursor: pointer;
 	display: block;
@@ -699,7 +700,7 @@ img {
 .info {
 	position: relative;
 	z-index: 4;
-	background-image: url(./img/pattern.png);
+	background-image: url(../img/pattern.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: auto auto;
 	background-size: auto;
@@ -764,7 +765,7 @@ img {
 }
 
 .data {
-	background-image: url(./img/bg-data.png);
+	background-image: url(../img/bg-data.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -797,6 +798,7 @@ img {
 }
 
 .data__btn {
+	font: inherit;
 	position: relative;
 	cursor: pointer;
 	display: block;
