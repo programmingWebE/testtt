@@ -674,11 +674,16 @@ main {
 	padding-top: 30px;
 }
 
-.main-footer__desc p {
+.main-footer__desc p,
+.main-footer__desc span {
 	font-size: 10px;
 	line-height: 1.4;
 	color: #cccccc;
 	font-family: NotoSans-Regular;
+}
+
+.main-footer__desc span {
+	display: block;
 }
 
 body {
