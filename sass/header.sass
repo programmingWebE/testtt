@@ -10,34 +10,67 @@
 		position: relative
 		padding-top: 62px
 		padding-bottom: 80px
+		+media(xs)
+			padding-bottom: 40px
+			padding-top: 40px
+			min-height: 930px
 	
 	&__girl
 		position: absolute
 		bottom: 0px
 		img
 			display: block
+			height: 100%
+			+media(xs)
+				min-height: 760px
 
 		&--left
 			left: 0px
-			z-index: 2
-			+media(sm)
-				left: -100px	
+			z-index: 2	
+			+media(mdx)
+				left: -100px
+			+media(xs)	
+				left: -120px
 
 		&--right
 			right: 0px
-			+media(sm)
-				right: -150px
+			+media(mdx)
+				right: - 150px
+			+media(xs)
+				right: -320px
 
 	&__logo
 		display: block
 		max-width: 240px
 		margin: 0 auto
 		margin-bottom: 72px
+		+media(sm)
+			margin-bottom: 60px
+		+media(xs)
+			margin-bottom: 50px
 		img
 			display: block
 			margin: 0 auto
 
+	&__content
+		position: relative
+		+media(xs)
+			margin-top: 305px
+		&:after
+			+media(xs)
+				position: absolute
+				content: ' '
+				z-index: -1
+				top: 0px
+				left: 0px
+				width: 100%
+				height: 100%
+				background: rgba(0, 8, 28, 0.8)
+				filter: blur(60px)
+
 	&__holder
+		+media(xs)
+			margin: 0 14px
 		input
 			font: inherit
 			display: block
@@ -48,6 +81,7 @@
 			outline: none
 			box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px 15px 12px rgba(0, 0, 0, 0.11)
 			border-radius: 8px
+			text-align: right
 			padding: 20px 24px
 			&::placeholder
 				text-align: right
@@ -72,6 +106,7 @@
 		margin-bottom: 10px
 		+media(xs)
 			flex-direction: column
+			margin: 0 14px
 
 	&__count
 		align-self: end
@@ -126,7 +161,11 @@
 			opacity: 1
 
 	&__box
-		margin-bottom: 35px
+		margin-bottom: 30px
+		+media(xs)
+			margin: 0 14px
+			margin-bottom: 15px
+
 		label
 			display: flex
 			align-items: center
@@ -142,7 +181,7 @@
 			&:before
 				content: ''
 				position: absolute
-				top: 7px
+				top: 9px
 				right: 0
 				width: 16px
 				height: 16px
@@ -155,7 +194,7 @@
 				border-color: #0b3a80
 				border-style: solid
 				border-width: 0 0.10em 0.10em 0
-				top: 12px
+				top: 14px
 				right: 8px
 				transform: rotate(45deg) translate(0%, -50%)
 				width: 0.5em
@@ -177,11 +216,15 @@
 	background: #09223f
 	border: 2px solid #366799
 	border-radius: 8px
+	+media(xs)
+		order: -1
+		margin-bottom: 16px
 
 .custom-select
 	position: relative
 	display: flex
 	flex-direction: column
+
 
 .custom-select__trigger
 	position: relative
@@ -197,6 +240,8 @@
 	min-height: 61px
 	background-position: center right 16px 
 	span
+		position: absolute
+		right: 60px
 		font-size: 24px
 		line-height: 1.2
 		color: #fff

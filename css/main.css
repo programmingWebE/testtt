@@ -32,6 +32,7 @@ img {
 
 .container--inner {
 	max-width: 1920px;
+	padding: 0px;
 }
 
 .container--header {

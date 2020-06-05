@@ -14,7 +14,7 @@
 		display: flex
 		flex-wrap: wrap
 		
-		+media(sm)
+		+media(md)
 			flex-direction: column
 			max-width: 500px
 			margin: 0 auto
@@ -22,29 +22,42 @@
 	&__item
 		&--content
 			width: 175px
-			+media(sm)
+			+media(md)
 				width: 100%
 				display: flex
 				padding: 0 8px
 			.main-footer__col:first-child
-				+media(sm)
+				+media(md)
 					margin-right: 32px
 				+media(xs)
 					margin-right: 16px
 		&--icon
 			display: flex
+			justify-content: flex-end
 			flex-wrap: wrap
 			width: calc(100% - 175px)
-			padding-left: 30px
-			margin: 0 -8px
-			+media(sm)
+			+media(md)
+				flex-direction: column
+				align-items: center
+				justify-content: center
 				width: 100%
-				padding-left: 0px
 				margin: 0px
+			.main-footer__block:first-child
+				padding-right: 32px
+				+media(md)
+					padding-right: 0px	
+	&__block
+		width: 50%
+		margin: 0 -8px
+		display: flex
+		flex-wrap: wrap
+		+media(md)
+			width: 100%
+			margin: 0px	
 
 	&__col
 		margin-bottom: 16px
-		+media(sm)
+		+media(md)
 			width: 50% 
 
 		img
@@ -52,7 +65,7 @@
 			width: 100%
 
 	&__box
-		width: calc(100% / 6 - 16px)
+		width: calc(100% / 3 - 16px)
 		min-height: 40px
 		display: flex
 		justify-content: center
@@ -63,10 +76,6 @@
 		margin: 0 8px
 		margin-bottom: 16px
 		+media(mdx)
-			width: calc(100% / 5 - 16px)
-		+media(md)
-			width: calc(100% / 4 - 16px)
-		+media(sm)
 			width: calc(100% / 3 - 16px)
 		img
 			display: block

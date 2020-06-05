@@ -13,12 +13,22 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
-	padding-top: 50px;
-	padding-bottom: 135px;
+	padding-top: 55px;
+	margin-bottom: 45px;
+	font-family: NotoSans-Regular;
 }
 
 .data__title span {
 	color: #ffc800;
+}
+
+.data__elem {
+	margin: 0 auto;
+}
+
+.data__elem img {
+	display: block;
+	margin: 0 auto;
 }
 
 .data__price {
@@ -29,6 +39,8 @@
 
 .data__price img {
 	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .data__btn {
@@ -51,7 +63,6 @@
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 	outline: none;
-	font-family: Noto Sans Arabic;
 	font-style: normal;
 	padding: 18px 10px;
 	font-weight: bold;
@@ -77,10 +88,22 @@
 	opacity: 1;
 }
 
+@media screen and (max-width: 780px) {
+
+.data__title {
+	margin-bottom: 45px;
+}
+
+}
+
 @media screen and (max-width: 560px) {
 
 .data__title {
-	padding-top: 32px;
+	max-width: 260px;
+	margin: 0 auto;
+	margin-bottom: 45px;
+	text-align: center;
+	padding-top: 30px;
 }
 
 }
