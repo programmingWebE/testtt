@@ -1,0 +1,86 @@
+.data {
+	background-image: url(./img/bg-data.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+	padding-bottom: 50px;
+}
+
+.data__title {
+	font-size: 40px;
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	padding-top: 50px;
+	padding-bottom: 135px;
+}
+
+.data__title span {
+	color: #ffc800;
+}
+
+.data__price {
+	max-width: 530px;
+	margin: 0 auto;
+	margin-bottom: 36px;
+}
+
+.data__price img {
+	display: block;
+}
+
+.data__btn {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #ffffff;
+	background: -webkit-linear-gradient(0.8deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
+	background: -o-linear-gradient(0.8deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
+	background: linear-gradient(89.2deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
+	-webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border: none;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	outline: none;
+	font-family: Noto Sans Arabic;
+	font-style: normal;
+	padding: 18px 10px;
+	font-weight: bold;
+}
+
+.data__btn:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.15);
+	-webkit-transition: 0.3s opacity;
+	-o-transition: 0.3s opacity;
+	transition: 0.3s opacity;
+	opacity: 0;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.data__btn:hover:after {
+	opacity: 1;
+}
+
+@media screen and (max-width: 560px) {
+
+.data__title {
+	padding-top: 32px;
+}
+
+}
+

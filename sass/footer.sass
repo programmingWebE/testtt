@@ -1,0 +1,80 @@
+@import 'responsive'
+
+.main-footer
+	background-color: #000D21
+	padding-top: 32px
+	padding-bottom: 22px
+	&__holder
+		border-top: 1px solid #423A4D
+		border-bottom: 1px solid #423A4D
+		padding-top: 30px
+		padding-bottom: 15px
+		
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		
+		+media(sm)
+			flex-direction: column
+			max-width: 500px
+			margin: 0 auto
+
+	&__item
+		&--content
+			width: 175px
+			+media(sm)
+				width: 100%
+				display: flex
+				padding: 0 8px
+			.main-footer__col:first-child
+				+media(sm)
+					margin-right: 32px
+				+media(xs)
+					margin-right: 16px
+		&--icon
+			display: flex
+			flex-wrap: wrap
+			width: calc(100% - 175px)
+			padding-left: 30px
+			margin: 0 -8px
+			+media(sm)
+				width: 100%
+				padding-left: 0px
+				margin: 0px
+
+	&__col
+		margin-bottom: 16px
+		+media(sm)
+			width: 50% 
+
+		img
+			display: block
+			width: 100%
+
+	&__box
+		width: calc(100% / 6 - 16px)
+		min-height: 40px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 1px solid rgba(255, 255, 255, 0.2)
+		border-radius: 4px
+		padding: 6px 2px 
+		margin: 0 8px
+		margin-bottom: 16px
+		+media(mdx)
+			width: calc(100% / 5 - 16px)
+		+media(md)
+			width: calc(100% / 4 - 16px)
+		+media(sm)
+			width: calc(100% / 3 - 16px)
+		img
+			display: block
+
+	&__desc
+		padding-top: 30px
+		p
+			font-size: 10px
+			line-height: 1.4
+			color: #cccccc
+			font-family: NotoSans-Regular

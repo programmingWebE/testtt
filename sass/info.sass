@@ -1,0 +1,71 @@
+@import 'responsive'
+
+.info
+	position: relative
+	z-index: 4
+	background-image: url(./img/pattern.png)
+	background-repeat: no-repeat
+	background-size: auto
+	background-repeat: repeat
+	background-position: top center
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		padding-top: 25px
+		padding-bottom: 30px
+		margin: 0 -12px
+		+media(sm)
+			max-width: 400px
+			margin: 0 auto
+			padding-top: 35px
+			padding-bottom: 0px
+		.info__item:nth-child(2)
+			+media(sm)
+				order: -3
+		.info__item:nth-child(3)
+			+media(sm)
+				order: -2
+			+media(xs)
+				order: 0
+
+
+	&__item
+		width: calc(100% / 4 - 24px)
+		margin: 0 12px
+		+media(sm)
+			width: calc(100% / 2 - 24px)
+			margin-bottom: 45px
+		+media(xs)
+			width: 100%
+			margin: 0px
+			margin-bottom: 45px
+
+
+	&__title
+		font-size: 28px
+		line-height: 1.7
+		color: #fff
+		text-align: center
+		padding-bottom: 20px
+		font-style: normal
+		font-weight: bold
+
+	&__image
+		margin-bottom: 16px
+		img
+			display: block
+			object-fit: cover
+			margin: 0 auto
+			width: 70px
+			height: 70px
+
+	&__text
+		max-width: 120px
+		margin: 0 auto
+		p
+			font-size: 14px
+			line-height: 1.4
+			color: #fff
+			text-align: center
+			font-style: normal
+			font-weight: bold
