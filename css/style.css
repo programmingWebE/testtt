@@ -539,9 +539,11 @@ main {
 	bottom: 0px;
 	width: 0.12rem;
 	height: 100%;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: 0.5s -webkit-transform;
+	transition: 0.5s -webkit-transform;
+	-o-transition: 0.5s transform;
+	transition: 0.5s transform;
+	transition: 0.5s transform, 0.5s -webkit-transform;
 }
 
 .arrow::before {
